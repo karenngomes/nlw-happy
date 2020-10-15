@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
 
 import '../styles/pages/landing.css';
@@ -8,7 +9,7 @@ import logoImg from '../images/logo.svg';
 function Landing() {
     return (
         <div id="page-landing">
-      <div className="content-wrapper">
+        <div className="content-wrapper">
         <img src={logoImg} alt="Happy"/>
 
         <main>
@@ -21,9 +22,9 @@ function Landing() {
           <span>Alagoas</span>
         </div>
 
-        <a href="" className="enter-app">
+        <Link to="/app" className="enter-app">
           <FiArrowRight size={26} color="rgba(0,0,0,0.6)" />
-        </a>
+        </Link>
       </div>
     </div>
     );
