@@ -25,7 +25,7 @@ export default {
   },
   async create(request: Request, response: Response) {
     const {
-      name,
+      nome,
       latitude,
       longitude,
       about,
@@ -43,7 +43,7 @@ export default {
     });
 
     const orphanage = orphanagesRepository.create({
-      name,
+      nome,
       latitude,
       longitude,
       about,
